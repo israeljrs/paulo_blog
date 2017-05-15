@@ -1,0 +1,7 @@
+<h1>Welcome#inde</h1>
+<%= form_tag("/search", method: "get") do %>
+  <%= label_tag(:q, "Digite um numero :") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Search") %>
+<% end %>
+<%= link_to 'Articles', articles_path %>
